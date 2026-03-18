@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sudhanshu | CS Student</title>
+    <title>Sudhanshu | CS (AI) Student</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
@@ -13,99 +13,183 @@
     <div class="grid-bg"></div>
 
     <nav>
-      <div class="logo">S<span>.</span>1319</div>
+      <div class="logo">S<span>.</span>dev</div>
       <div class="nav-links">
-        <a href="#work">work</a>
+        <a href="#about">about</a>
+        <a href="#work">projects</a>
         <a href="#skills">skills</a>
         <a href="#contact">contact</a>
       </div>
     </nav>
 
-    <section class="hero">
+    <!-- Hero -->
+    <section class="hero" id="about">
       <div class="tag"><span class="tag-dot"></span>Open to opportunities</div>
-      <h1>Sudhanshu<br /><span class="outline-text">Khichade</span></h1>
+      <h1>Sudhanshu<br /><span class="outline-text">Sharma</span></h1>
       <p class="hero-sub">
-        CS student building things for the web. Obsessed with clean code,
-        good design, and shipping real products.
+        CS (AI) student &amp; data analyst intern. I build AI automation pipelines,
+        intelligent web tools, and data-driven systems that actually ship.
       </p>
       <div class="hero-actions">
-        <a href="#work" class="btn-primary">View my work</a>
+        <a href="#work" class="btn-primary">View projects</a>
         <a href="#contact" class="btn-ghost">Get in touch</a>
       </div>
-    </section>
 
-    <section class="section" id="skills">
-      <div class="section-label">skills &amp; tools</div>
-      <div class="skills-grid">
-        <span class="skill-pill hl">React</span>
-        <span class="skill-pill hl">Vite</span>
-        <span class="skill-pill hl">JavaScript</span>
-        <span class="skill-pill">TypeScript</span>
-        <span class="skill-pill">Node.js</span>
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">C++</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">GitHub</span>
-        <span class="skill-pill">HTML / CSS</span>
-        <span class="skill-pill">REST APIs</span>
-        <span class="skill-pill">Tailwind</span>
-        <span class="skill-pill">MongoDB</span>
-        <span class="skill-pill">SQL</span>
+      <div class="exp-card">
+        <div class="exp-left">
+          <div class="exp-role">Data Analyst Intern</div>
+          <div class="exp-company">3C Customeraization Technologies Pvt. Ltd.</div>
+        </div>
+        <div class="exp-pills">
+          <span class="exp-pill">Reduced manual work 70%</span>
+          <span class="exp-pill">50% faster data retrieval</span>
+          <span class="exp-pill">OpenAI · Cohere · SQL Server</span>
+        </div>
       </div>
     </section>
 
+    <!-- Projects -->
     <section class="section" id="work">
       <div class="section-label">selected projects</div>
       <div class="projects-grid">
+
         <a class="project-card" href="https://github.com/Sudhanshu1319" target="_blank">
-          <div class="proj-num">01</div>
-          <div class="proj-title">Project Alpha</div>
-          <div class="proj-desc">A short description of what this project does and the problem it solves.</div>
-          <div class="proj-tags">
-            <span class="proj-tag">React</span>
-            <span class="proj-tag">Node.js</span>
-            <span class="proj-tag">MongoDB</span>
+          <div class="proj-header">
+            <div class="proj-num">01</div>
+            <div class="proj-arrow">↗</div>
           </div>
-          <div class="proj-arrow">↗</div>
+          <div class="proj-title">Auto-Resolve — Smart Ticket Triage</div>
+          <div class="proj-desc">AI system using GPT-4o, LangChain, and a vector database for ticket classification, sentiment analysis, and auto-replies. Cuts support overhead significantly.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">GPT-4o</span>
+            <span class="proj-tag">LangChain</span>
+            <span class="proj-tag">Vector DB</span>
+            <span class="proj-tag">Python</span>
+          </div>
         </a>
+
         <a class="project-card" href="https://github.com/Sudhanshu1319" target="_blank">
-          <div class="proj-num">02</div>
-          <div class="proj-title">Project Beta</div>
-          <div class="proj-desc">Another project that showcases your skills in building real things.</div>
+          <div class="proj-header">
+            <div class="proj-num">02</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <div class="proj-title">Exotel + OpenAI Voice Agent</div>
+          <div class="proj-desc">n8n-based voice agent where customers call, hear a dynamic message, and receive AI-generated answers sourced from Excel and Supabase data in real time.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">n8n</span>
+            <span class="proj-tag">OpenAI</span>
+            <span class="proj-tag">Exotel</span>
+            <span class="proj-tag">Supabase</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="https://github.com/Sudhanshu1319" target="_blank">
+          <div class="proj-header">
+            <div class="proj-num">03</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <div class="proj-title">Image Integrity Inspector</div>
+          <div class="proj-desc">Detects image tampering using Error Level Analysis (ELA) combined with a CNN classifier. Flags manipulated regions with high accuracy.</div>
           <div class="proj-tags">
             <span class="proj-tag">Python</span>
-            <span class="proj-tag">REST API</span>
+            <span class="proj-tag">CNN</span>
+            <span class="proj-tag">ELA</span>
+            <span class="proj-tag">OpenCV</span>
           </div>
-          <div class="proj-arrow">↗</div>
         </a>
+
         <a class="project-card" href="https://github.com/Sudhanshu1319" target="_blank">
-          <div class="proj-num">03</div>
-          <div class="proj-title">Project Gamma</div>
-          <div class="proj-desc">Built to solve a real problem — clean, functional, deployed.</div>
-          <div class="proj-tags">
-            <span class="proj-tag">Vite</span>
-            <span class="proj-tag">GitHub Pages</span>
+          <div class="proj-header">
+            <div class="proj-num">04</div>
+            <div class="proj-arrow">↗</div>
           </div>
-          <div class="proj-arrow">↗</div>
+          <div class="proj-title">OCR → Google Sheets Automation</div>
+          <div class="proj-desc">n8n pipeline that extracts hotel names and amounts from bill images using OCR and pushes structured data directly into Google Sheets — zero manual entry.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">n8n</span>
+            <span class="proj-tag">OCR</span>
+            <span class="proj-tag">Google Sheets</span>
+            <span class="proj-tag">GCP</span>
+          </div>
         </a>
+
+        <a class="project-card" href="https://github.com/Sudhanshu1319" target="_blank">
+          <div class="proj-header">
+            <div class="proj-num">05</div>
+            <div class="proj-arrow">↗</div>
+          </div>
+          <div class="proj-title">Sarvam AI Speech-to-Text Pipeline</div>
+          <div class="proj-desc">Batch speech-to-text and translation workflow using Sarvam AI, built in Python and replicated in n8n with Azure storage integration for scalable audio processing.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Sarvam AI</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">n8n</span>
+            <span class="proj-tag">Azure</span>
+          </div>
+        </a>
+
       </div>
     </section>
 
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section-label">skills &amp; tools</div>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skills-grid">
+            <span class="skill-pill hl">Python</span>
+            <span class="skill-pill hl">SQL</span>
+            <span class="skill-pill hl">Java</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">HTML / CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">AI &amp; Data</div>
+          <div class="skills-grid">
+            <span class="skill-pill hl">OpenAI API</span>
+            <span class="skill-pill hl">LangChain</span>
+            <span class="skill-pill hl">Cohere API</span>
+            <span class="skill-pill">Vector DB</span>
+            <span class="skill-pill">Excel</span>
+            <span class="skill-pill">MS SQL Server</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Tools &amp; Platforms</div>
+          <div class="skills-grid">
+            <span class="skill-pill hl">n8n</span>
+            <span class="skill-pill">Supabase</span>
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill">GCP</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">Vite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section class="section" id="contact">
       <div class="contact-row">
         <div class="contact-big">
           Let's build<br />something <span class="contact-accent">together.</span>
         </div>
-        <div class="social-links">
-          <a class="social-link" href="https://github.com/Sudhanshu1319" target="_blank">GitHub</a>
-          <a class="social-link" href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
-          <a class="social-link" href="mailto:your@email.com">Email</a>
+        <div class="contact-right">
+          <p class="contact-sub">Open to internships, freelance work, and interesting projects.</p>
+          <div class="social-links">
+            <a class="social-link" href="https://github.com/Sudhanshu1319" target="_blank">GitHub</a>
+            <a class="social-link" href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <a class="social-link" href="mailto:your@email.com">Email</a>
+          </div>
         </div>
       </div>
     </section>
 
     <div class="footer-bar">
-      <span class="footer-copy">© 2026 Sudhanshu · Sudhanshu1319.github.io</span>
+      <span class="footer-copy">© 2026 Sudhanshu Sharma · CS (AI)</span>
       <span class="status-dot">available for work</span>
     </div>
 
