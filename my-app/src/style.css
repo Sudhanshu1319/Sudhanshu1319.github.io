@@ -38,18 +38,17 @@ nav {
 }
 .logo span { color: #5DCAA5; }
 
-.nav-links { display: flex; gap: 36px; }
+.nav-links { display: flex; gap: 32px; }
 .nav-links a {
-  font-size: 12px;
-  color: rgba(232,230,224,0.45);
+  font-size: 11px;
+  color: rgba(232,230,224,0.4);
   text-decoration: none;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 0.2s;
 }
 .nav-links a:hover { color: #e8e6e0; }
 
-/* Hero */
 .hero {
   padding: 80px 48px 64px;
   position: relative;
@@ -108,12 +107,12 @@ h1 {
 .hero-sub {
   font-size: 15px;
   color: rgba(232,230,224,0.5);
-  max-width: 460px;
+  max-width: 480px;
   line-height: 1.75;
   margin-bottom: 36px;
 }
 
-.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
 .btn-primary {
   font-family: 'DM Sans', sans-serif;
@@ -127,7 +126,6 @@ h1 {
   text-decoration: none;
   display: inline-block;
   transition: background 0.2s, transform 0.1s;
-  font-weight: 400;
 }
 .btn-primary:hover { background: #4db894; }
 .btn-primary:active { transform: scale(0.98); }
@@ -147,50 +145,6 @@ h1 {
 }
 .btn-ghost:hover { border-color: rgba(255,255,255,0.3); color: #e8e6e0; }
 
-/* Experience card */
-.exp-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 20px 24px;
-  border: 0.5px solid rgba(93,202,165,0.15);
-  border-radius: 10px;
-  background: rgba(93,202,165,0.04);
-  flex-wrap: wrap;
-  max-width: 680px;
-}
-
-.exp-role {
-  font-family: 'Syne', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 4px;
-}
-
-.exp-company {
-  font-size: 12px;
-  color: rgba(232,230,224,0.4);
-}
-
-.exp-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
-}
-
-.exp-pill {
-  font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 4px;
-  background: rgba(93,202,165,0.08);
-  border: 0.5px solid rgba(93,202,165,0.2);
-  color: #5DCAA5;
-  white-space: nowrap;
-}
-
-/* Sections */
 .section {
   padding: 64px 48px;
   position: relative;
@@ -206,10 +160,99 @@ h1 {
   margin-bottom: 32px;
 }
 
+/* Experience */
+.exp-card {
+  border: 0.5px solid rgba(93,202,165,0.15);
+  border-radius: 12px;
+  background: rgba(93,202,165,0.03);
+  padding: 28px 32px;
+  max-width: 720px;
+}
+
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.exp-role {
+  font-family: 'Syne', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.exp-company {
+  font-size: 12px;
+  color: rgba(232,230,224,0.4);
+}
+
+.exp-badge {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(93,202,165,0.1);
+  border: 0.5px solid rgba(93,202,165,0.25);
+  color: #5DCAA5;
+}
+
+.exp-divider {
+  height: 0.5px;
+  background: rgba(255,255,255,0.07);
+  margin-bottom: 20px;
+}
+
+.exp-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.exp-item {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(232,230,224,0.6);
+  line-height: 1.6;
+  align-items: flex-start;
+}
+
+.exp-dot {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: #5DCAA5;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.exp-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 16px;
+  border-top: 0.5px solid rgba(255,255,255,0.06);
+}
+
+.exp-pill {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.04);
+  border: 0.5px solid rgba(255,255,255,0.08);
+  color: rgba(232,230,224,0.45);
+}
+
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 1px;
   border: 0.5px solid rgba(255,255,255,0.07);
   border-radius: 12px;
@@ -222,15 +265,15 @@ h1 {
   text-decoration: none;
   display: block;
   transition: background 0.2s;
-  border-bottom: 0.5px solid rgba(255,255,255,0.05);
+  border-bottom: 0.5px solid rgba(255,255,255,0.04);
 }
 .project-card:hover { background: #10171f; }
 
 .proj-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  gap: 8px;
+  margin-bottom: 14px;
 }
 
 .proj-num {
@@ -238,11 +281,23 @@ h1 {
   font-size: 11px;
   color: rgba(232,230,224,0.18);
   letter-spacing: 0.06em;
+  flex: 1;
 }
+
+.proj-type {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.proj-type.dev { background: rgba(55,138,221,0.1); color: #378ADD; border: 0.5px solid rgba(55,138,221,0.2); }
+.proj-type.ai  { background: rgba(93,202,165,0.1); color: #5DCAA5; border: 0.5px solid rgba(93,202,165,0.2); }
+.proj-type.ml  { background: rgba(239,159,39,0.1); color: #EF9F27; border: 0.5px solid rgba(239,159,39,0.2); }
 
 .proj-arrow {
   font-size: 16px;
-  color: rgba(93,202,165,0.35);
+  color: rgba(232,230,224,0.2);
   transition: color 0.2s, transform 0.2s;
 }
 .project-card:hover .proj-arrow { color: #5DCAA5; transform: translate(3px,-3px); }
@@ -265,7 +320,6 @@ h1 {
 }
 
 .proj-tags { display: flex; gap: 6px; flex-wrap: wrap; }
-
 .proj-tag {
   font-size: 10px;
   padding: 3px 9px;
@@ -294,7 +348,7 @@ h1 {
   padding: 6px 14px;
   border-radius: 4px;
   border: 0.5px solid rgba(255,255,255,0.09);
-  color: rgba(232,230,224,0.6);
+  color: rgba(232,230,224,0.55);
   background: rgba(255,255,255,0.02);
   letter-spacing: 0.02em;
   transition: border-color 0.2s, color 0.2s;
@@ -376,14 +430,14 @@ h1 {
   animation: pulse 2s infinite;
 }
 
-/* Mobile */
 @media (max-width: 640px) {
-  nav { padding: 20px 20px; }
-  .nav-links { gap: 20px; }
+  nav { padding: 20px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 10px; }
   .hero { padding: 48px 20px 40px; }
   .section { padding: 48px 20px; }
   .footer-bar { padding: 16px 20px; flex-direction: column; gap: 10px; text-align: center; }
   .contact-row { flex-direction: column; }
   .projects-grid { grid-template-columns: 1fr; }
-  .exp-card { flex-direction: column; gap: 14px; }
+  .exp-card { padding: 20px; }
 }
