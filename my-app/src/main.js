@@ -41,20 +41,24 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeWriter, 500);
   }
 
-  // --- 3. Card Mouse Track Glow (Optional but adds premium feel) ---
+  // --- 3. 3D Tilt Effect on Cards ---
   const cards = document.querySelectorAll('.glass-card');
-  document.addEventListener('mousemove', e => {
-    for(const card of cards) {
+  const maxTilt = 14; // degrees
+
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
-    }
+
+      const rotateX = ((y / rect.height) - 0.5) * -maxTilt;
+      const rotateY = ((x / rect.width) - 0.5) * maxTilt;
+
+      card.style.transform = `perspective(700px) scale(1.03) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
   });
-  
-  // Note: To use the mouse track glow, we need to add a specialized background in CSS.
-  // We'll stick to the base glassmorphism for now, but the values are tracked here
-  // if you want to extend it with pseudo-elements later!
 });
