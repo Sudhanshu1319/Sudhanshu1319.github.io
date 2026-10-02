@@ -19,4 +19,5 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll, { passive: true })
 window.addEventListener('resize', onScroll)
+window.addEventListener('load', onScroll)
 onScroll()
